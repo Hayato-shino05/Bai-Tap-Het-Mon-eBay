@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone 15 Pro Max - eBuy</title>
+    <title>Điện thoại - eBuy</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -40,9 +40,9 @@
                 <a href="#">Thời trang</a>
                 <ul class="submenu">
                     <li><a href="thoi-trang-nam.html">Nam</a></li>
-                    <li><a href="#">Nữ</a></li>
-                    <li><a href="#">Trẻ em</a></li>
-                    <li><a href="#">Phụ kiện thời trang</a></li>
+                    <li><a href="thoi-trang-nu.html">Nữ</a></li>
+                    <li><a href="thoi-trang-tre-em.html">Trẻ em</a></li>
+                    <li><a href="phu-kien-thoi-trang.html">Phụ kiện thời trang</a></li>
                 </ul>
             </li>
             <li>
@@ -54,107 +54,41 @@
                     <li><a href="#">Nội thất</a></li>
                 </ul>
             </li>
-            <li><a href="#">Sức khỏe & Làm đẹp</a></li>
-            <li><a href="#">Thể thao</a></li>
-            <li><a href="#">Đấu giá</a></li>
+            <li><a href="#"><i class="fas fa-heartbeat"></i> Sức khỏe & Làm đẹp</a></li>
+            <li><a href="#"><i class="fas fa-running"></i> Thể thao</a></li>
+            <li><a href="#"><i class="fas fa-gavel"></i> Đấu giá</a></li>
+            <li><a href="tin-tuc.html"><i class="fas fa-newspaper"></i> Tin tức</a></li>
         </ul>
     </nav>
 
     <main>
-        <div class="product-detail">
-            <div class="product-images">
-                <div class="main-image">
-                    <img src="/picture/15.jpg" alt="iPhone 15 Pro Max">
-                </div>
-                <div class="thumbnail-images">
-                    <img src="/picture/15-1.jpg" alt="iPhone 15 Pro Max - Mặt trước">
-                    <img src="/picture/15-2.jpg" alt="iPhone 15 Pro Max - Mặt sau">
-                    <img src="/picture/15-3.jpg" alt="iPhone 15 Pro Max - Cạnh bên">
-                    <img src="/picture/15-4.jpg" alt="iPhone 15 Pro Max - Camera">
-                </div>
-            </div>
-            <div class="product-info-detail">
-                <h1>iPhone 15 Pro Max</h1>
-                <div class="price">25.990.000 ₫</div>
-                <div class="countdown">Còn 2 giờ</div>
-                <div class="specifications">
-                    <h3>Thông số kỹ thuật:</h3>
-                    <ul>
-                        <li>Màn hình: 6.7 inch OLED Super Retina XDR</li>
-                        <li>Chip: A17 Pro</li>
-                        <li>RAM: 8GB</li>
-                        <li>Bộ nhớ trong: 256GB</li>
-                        <li>Camera chính: 48MP</li>
-                        <li>Pin: 4422mAh</li>
-                    </ul>
-                </div>
-                <div class="color-options">
-                    <h3>Màu sắc:</h3>
-                    <div class="colors">
-                        <button class="color-btn" style="background-color: #2B2B2B">Titan Đen</button>
-                        <button class="color-btn" style="background-color: #F5F5F0">Titan Tự Nhiên</button>
-                        <button class="color-btn" style="background-color: #F0F0FF">Titan Xanh</button>
-                        <button class="color-btn" style="background-color: #F5E6E0">Titan Trắng</button>
-                    </div>
-                </div>
-                <div class="quantity">
-                    <h3>Số lượng:</h3>
-                    <div class="quantity-selector">
-                        <button>-</button>
-                        <input type="number" value="1" min="1">
-                        <button>+</button>
-                    </div>
-                </div>
-                <div class="action-buttons">
-                    <button class="buy-now">Mua ngay</button>
-                    <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        <h2>Điện thoại</h2>
+        <div class="products">
+            <div class="product">
+                <img src="/picture/15.jpg" alt="Smartphone">
+                <div class="product-info">
+                    <div class="product-title">iPhone 15 Pro Max</div>
+                    <div class="product-price">25.990.000 ₫</div>
+                    <div class="product-bid">Còn 2 giờ</div>
+                    <a href="iphone15.html" class="cta-button">Mua ngay</a>
                 </div>
             </div>
-        </div>
-
-        <div class="product-description">
-            <h2>Mô tả sản phẩm</h2>
-            <div class="description-content">
-                <p>iPhone 15 Pro Max là chiếc iPhone cao cấp nhất của Apple với nhiều cải tiến đột phá:</p>
-                <ul>
-                    <li>Thiết kế khung titan chuẩn hàng không vũ trụ</li>
-                    <li>Chip A17 Pro mạnh mẽ nhất từ trước đến nay</li>
-                    <li>Hệ thống camera chuyên nghiệp với độ phân giải 48MP</li>
-                    <li>Màn hình Super Retina XDR với ProMotion</li>
-                    <li>Hỗ trợ sạc nhanh và sạc không dây MagSafe</li>
-                </ul>
+            <div class="product">
+                <img src="/picture/samsung.jpg" alt="Samsung Galaxy S24 Ultra">
+                <div class="product-info">
+                    <div class="product-title">Samsung Galaxy S24 Ultra</div>
+                    <div class="product-price">29.990.000 ₫</div>
+                    <div class="product-bid">Mới ra mắt</div>
+                    <a href="#" class="cta-button">Mua ngay</a>
+                </div>
             </div>
-        </div>
-
-        <div class="related-products">
-            <h2>Sản phẩm liên quan</h2>
-            <div class="products">
-                <div class="product">
-                    <img src="/picture/14.jpg" alt="iPhone 14 Pro Max">
-                    <div class="product-info">
-                        <div class="product-title">iPhone 14 Pro Max</div>
-                        <div class="product-price">22.990.000 ₫</div>
-                        <div class="product-bid">Giảm 15%</div>
-                        <a href="#" class="cta-button">Mua ngay</a>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="/picture/samsung.jpg" alt="Samsung Galaxy S24 Ultra">
-                    <div class="product-info">
-                        <div class="product-title">Samsung Galaxy S24 Ultra</div>
-                        <div class="product-price">29.990.000 ₫</div>
-                        <div class="product-bid">Mới ra mắt</div>
-                        <a href="#" class="cta-button">Mua ngay</a>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="/picture/xiaomi.jpg" alt="Xiaomi 14 Pro">
-                    <div class="product-info">
-                        <div class="product-title">Xiaomi 14 Pro</div>
-                        <div class="product-price">19.990.000 ₫</div>
-                        <div class="product-bid">Giảm 10%</div>
-                        <a href="#" class="cta-button">Mua ngay</a>
-                    </div>
+            <div class="product">
+                <img src="/picture/xiaomi.jpg" alt="Xiaomi 14 Pro">
+                <div class="product-info">
+                    <div class="product-title">Xiaomi 14 Pro</div>
+                    <div class="product-price">19.990.000 ₫</div>
+                    <div class="product-bid">Giảm 10%</div>
+                    <a href="#" class="cta-button">Mua ngay</a>
                 </div>
             </div>
         </div>

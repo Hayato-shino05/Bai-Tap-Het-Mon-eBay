@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phụ kiện điện tử - eBuy</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>eBuy - Phụ kiện</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <div class="top-header">
             <div class="logo">
-                <span>e</span><span>B</span><span>u</span><span>y</span>
+                <a href="../index.html">
+                    <span>e</span><span>B</span><span>u</span><span>y</span>
+                </a>
             </div>
             <div class="search-bar">
                 <input type="text" placeholder="Tìm kiếm sản phẩm...">
@@ -26,7 +28,7 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="../index.html">Trang chủ</a></li>
             <li>
                 <a href="#">Điện tử</a>
                 <ul class="submenu">
@@ -45,41 +47,53 @@
                     <li><a href="phu-kien-thoi-trang.html">Phụ kiện thời trang</a></li>
                 </ul>
             </li>
-            <li><a href="#">Đồ gia dụng</a></li>
-            <li><a href="#">Sức khỏe & Làm đẹp</a></li>
-            <li><a href="#">Thể thao</a></li>
-            <li><a href="#">Đấu giá</a></li>
+            <li>
+                <a href="#">Đồ gia dụng</a>
+                <ul class="submenu">
+                    <li><a href="nha-bep.html">Nhà bếp</a></li>
+                    <li><a href="phong-ngu.html">Phòng ngủ</a></li>
+                    <li><a href="phong-tam.html">Phòng tắm</a></li>
+                    <li><a href="noi-that.html">Nội thất</a></li>
+                </ul>
+            </li>
+            <li><a href="suc-khoe-lam-dep.html">Sức khỏe & Làm đẹp</a></li>
+            <li><a href="the-thao.html">Thể thao</a></li>
+            <li><a href="dau-gia.html">Đấu giá</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>Phụ kiện điện tử</h2>
+        <div class="banner">
+            Phụ kiện - Giảm giá đến 35%
+        </div>
+
+        <h2>Phụ kiện nổi bật</h2>
         <div class="products">
             <div class="product">
-                <img src="/picture/sony.jpg" alt="Headphones">
+                <img src="../picture/products/watch.jpg" alt="AirPods Pro">
                 <div class="product-info">
-                    <div class="product-title">Sony WH-1000XM5</div>
-                    <div class="product-price">7.490.000 ₫</div>
-                    <div class="product-bid">Mua ngay</div>
-                    <a href="#" class="cta-button">Thêm vào giỏ</a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/picture/watch.jpg" alt="Smartwatch">
-                <div class="product-info">
-                    <div class="product-title">Apple Watch Series 9</div>
-                    <div class="product-price">9.990.000 ₫</div>
-                    <div class="product-bid">Còn 4 giờ</div>
+                    <div class="product-title">AirPods Pro 2</div>
+                    <div class="product-price">6.990.000 ₫</div>
+                    <div class="product-bid">Còn 5 giờ</div>
                     <a href="#" class="cta-button">Mua ngay</a>
                 </div>
             </div>
             <div class="product">
-                <img src="/picture/jbl.jpg" alt="Speaker">
+                <img src="../picture/products/watch.jpg" alt="Apple Watch">
                 <div class="product-info">
-                    <div class="product-title">JBL Charge 5</div>
-                    <div class="product-price">3.290.000 ₫</div>
+                    <div class="product-title">Apple Watch Series 9</div>
+                    <div class="product-price">9.990.000 ₫</div>
                     <div class="product-bid">Mua ngay</div>
                     <a href="#" class="cta-button">Thêm vào giỏ</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../picture/products/watch.jpg" alt="MagSafe">
+                <div class="product-info">
+                    <div class="product-title">Apple MagSafe</div>
+                    <div class="product-price">790.000 ₫</div>
+                    <div class="product-bid">Còn 7 giờ</div>
+                    <a href="#" class="cta-button">Mua ngay</a>
                 </div>
             </div>
         </div>
@@ -130,8 +144,8 @@
                 <div class="app-download">
                     <h4>Tải ứng dụng eBuy</h4>
                     <div class="app-buttons">
-                        <a href="#"><img src="/picture/app-store.png" alt="Download on App Store"></a>
-                        <a href="#"><img src="/picture/google-play.png" alt="Get it on Google Play"></a>
+                        <a href="#">Download on App Store</a>
+                        <a href="#">Get it on Google Play</a>
                     </div>
                 </div>
             </div>
@@ -139,13 +153,13 @@
 
         <div class="footer-bottom">
             <div class="copyright">
+                <div class="designer-credit">
+                    <p>Design by: <a href="https://github.com/hayato-shino05" target="_blank">hayato-shino05</a></p>
+                </div>
                 <p>&copy; 2025 eBuy. Tất cả các quyền được bảo lưu.</p>
                 <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
                 <p>Số điện thoại: (84) 123-456-789</p>
                 <p>Email: support@ebuy.com</p>
-            </div>
-            <div class="designer-credit">
-                <p>Design by: <a href="https://github.com/Hayato-shino05" target="_blank">Hayato-shino</a></p>
             </div>
         </div>
     </footer>

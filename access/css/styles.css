@@ -42,6 +42,12 @@ header {
     transform: scale(1.05);
 }
 
+.logo a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .logo span:nth-child(2) {
     color: #0064d2;
 }
@@ -135,6 +141,7 @@ nav {
     padding: 0;
     position: relative;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
 }
 
 nav ul {
@@ -144,6 +151,7 @@ nav ul {
     padding: 0;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 nav > ul > li {
@@ -171,7 +179,7 @@ nav > ul > li:hover > a {
     background-color: #fff;
     min-width: 200px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    z-index: 1000;
+    z-index: 1001;
 }
 
 nav > ul > li:hover .submenu {
@@ -180,6 +188,7 @@ nav > ul > li:hover .submenu {
 
 .submenu li {
     margin: 0;
+    position: relative;
 }
 
 .submenu a {
@@ -203,7 +212,7 @@ main {
 }
 
 .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('picture/s-l960.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../../picture/products/s-l960.png');
     background-size: cover;
     background-position: center;
     height: 350px;
