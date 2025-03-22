@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eBuy - Thời trang nam</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -15,126 +16,129 @@
                 </a>
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="Tìm kiếm sản phẩm...">
-                <button>Tìm</button>
+                <form action="#" method="get">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm..." required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
             </div>
             <div class="user-actions">
-                <a href="#">Đăng nhập</a>
-                <a href="#">Đăng ký</a>
-                <a href="#">Giỏ hàng</a>
+                <a href="#" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a>
+                <a href="#" class="register-btn"><i class="fas fa-user-plus"></i> Đăng ký</a>
+                <a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="cart-count">0</span></a>
             </div>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
             <li>
-                <a href="#">Điện tử</a>
+                <a href="#"><i class="fas fa-mobile-alt"></i> Điện tử</a>
                 <ul class="submenu">
-                    <li><a href="dien-thoai.html">Điện thoại</a></li>
-                    <li><a href="laptop.html">Laptop</a></li>
-                    <li><a href="may-tinh-bang.html">Máy tính bảng</a></li>
-                    <li><a href="phu-kien.html">Phụ kiện</a></li>
+                    <li><a href="dien-thoai.html"><i class="fas fa-phone"></i> Điện thoại</a></li>
+                    <li><a href="laptop.html"><i class="fas fa-laptop"></i> Laptop</a></li>
+                    <li><a href="may-tinh-bang.html"><i class="fas fa-tablet-alt"></i> Máy tính bảng</a></li>
+                    <li><a href="phu-kien.html"><i class="fas fa-headphones"></i> Phụ kiện</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">Thời trang</a>
+                <a href="#"><i class="fas fa-tshirt"></i> Thời trang</a>
                 <ul class="submenu">
-                    <li><a href="thoi-trang-nam.html">Nam</a></li>
-                    <li><a href="thoi-trang-nu.html">Nữ</a></li>
-                    <li><a href="thoi-trang-tre-em.html">Trẻ em</a></li>
-                    <li><a href="phu-kien-thoi-trang.html">Phụ kiện thời trang</a></li>
+                    <li><a href="thoi-trang-nam.html"><i class="fas fa-male"></i> Nam</a></li>
+                    <li><a href="thoi-trang-nu.html"><i class="fas fa-female"></i> Nữ</a></li>
+                    <li><a href="thoi-trang-tre-em.html"><i class="fas fa-baby"></i> Trẻ em</a></li>
+                    <li><a href="phu-kien-thoi-trang.html"><i class="fas fa-ring"></i> Phụ kiện thời trang</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">Đồ gia dụng</a>
+                <a href="#"><i class="fas fa-home"></i> Đồ gia dụng</a>
                 <ul class="submenu">
-                    <li><a href="nha-bep.html">Nhà bếp</a></li>
-                    <li><a href="phong-ngu.html">Phòng ngủ</a></li>
-                    <li><a href="phong-tam.html">Phòng tắm</a></li>
-                    <li><a href="noi-that.html">Nội thất</a></li>
+                    <li><a href="nha-bep.html"><i class="fas fa-utensils"></i> Nhà bếp</a></li>
+                    <li><a href="phong-ngu.html"><i class="fas fa-bed"></i> Phòng ngủ</a></li>
+                    <li><a href="phong-tam.html"><i class="fas fa-bath"></i> Phòng tắm</a></li>
+                    <li><a href="noi-that.html"><i class="fas fa-couch"></i> Nội thất</a></li>
                 </ul>
             </li>
-            <li><a href="suc-khoe-lam-dep.html">Sức khỏe & Làm đẹp</a></li>
-            <li><a href="the-thao.html">Thể thao</a></li>
-            <li><a href="dau-gia.html">Đấu giá</a></li>
+            <li><a href="suc-khoe-lam-dep.html"><i class="fas fa-heart"></i> Sức khỏe & Làm đẹp</a></li>
+            <li><a href="the-thao.html"><i class="fas fa-running"></i> Thể thao</a></li>
+            <li><a href="dau-gia.html"><i class="fas fa-gavel"></i> Đấu giá</a></li>
         </ul>
     </nav>
 
     <main>
-        <div class="banner">
-            Thời trang nam - Giảm giá đến 45%
-        </div>
-
-        <h2>Thời trang nam nổi bật</h2>
-        <div class="products">
-            <div class="product">
-                <img src="../picture/products/canon.jpg" alt="Áo sơ mi">
-                <div class="product-info">
-                    <div class="product-title">Áo sơ mi nam trắng</div>
-                    <div class="product-price">399.000 ₫</div>
-                    <div class="product-bid">Còn 3 giờ</div>
-                    <a href="#" class="cta-button">Mua ngay</a>
+        <section class="featured-products">
+            <h2><i class="fas fa-male"></i> Thời trang nam</h2>
+            <div class="products">
+                <div class="product">
+                    <div class="product-badge">Mới</div>
+                    <img src="../picture/products/canon.jpg" alt="Áo sơ mi nam trắng">
+                    <div class="product-info">
+                        <div class="product-title">Áo sơ mi nam trắng</div>
+                        <div class="product-price">299.000 ₫</div>
+                        <div class="product-bid">Còn 2 giờ</div>
+                        <a href="#" class="cta-button">Mua ngay</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-badge hot">Hot</div>
+                    <img src="../picture/products/canon.jpg" alt="Quần jean nam">
+                    <div class="product-info">
+                        <div class="product-title">Quần jean nam</div>
+                        <div class="product-price">499.000 ₫</div>
+                        <div class="product-bid">15 lượt đấu giá</div>
+                        <a href="#" class="cta-button">Đặt giá</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-badge sale">Sale</div>
+                    <img src="../picture/products/canon.jpg" alt="Áo khoác nam">
+                    <div class="product-info">
+                        <div class="product-title">Áo khoác nam</div>
+                        <div class="product-price">799.000 ₫</div>
+                        <div class="product-bid">Mua ngay</div>
+                        <a href="#" class="cta-button">Thêm vào giỏ</a>
+                    </div>
                 </div>
             </div>
-            <div class="product">
-                <img src="../picture/products/canon.jpg" alt="Quần jean">
-                <div class="product-info">
-                    <div class="product-title">Quần jean nam</div>
-                    <div class="product-price">599.000 ₫</div>
-                    <div class="product-bid">Mua ngay</div>
-                    <a href="#" class="cta-button">Thêm vào giỏ</a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="../picture/products/canon.jpg" alt="Áo khoác">
-                <div class="product-info">
-                    <div class="product-title">Áo khoác nam</div>
-                    <div class="product-price">799.000 ₫</div>
-                    <div class="product-bid">Còn 6 giờ</div>
-                    <a href="#" class="cta-button">Mua ngay</a>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Về eBuy</h3>
+                <h3><i class="fas fa-info-circle"></i> Về eBuy</h3>
                 <ul>
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li><a href="#">Tuyển dụng</a></li>
-                    <li><a href="#">Điều khoản</a></li>
-                    <li><a href="#">Chính sách bảo mật</a></li>
-                    <li><a href="#">Báo chí</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Giới thiệu</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Tuyển dụng</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Điều khoản</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Chính sách bảo mật</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Báo chí</a></li>
                 </ul>
             </div>
             
             <div class="footer-section">
-                <h3>Hỗ Trợ Khách Hàng</h3>
+                <h3><i class="fas fa-headset"></i> Hỗ Trợ Khách Hàng</h3>
                 <ul>
-                    <li><a href="#">Trung tâm trợ giúp</a></li>
-                    <li><a href="#">Hướng dẫn mua hàng</a></li>
-                    <li><a href="#">Hướng dẫn bán hàng</a></li>
-                    <li><a href="#">Vận chuyển</a></li>
-                    <li><a href="#">Trả hàng & Hoàn tiền</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Trung tâm trợ giúp</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Hướng dẫn mua hàng</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Hướng dẫn bán hàng</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Vận chuyển</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Trả hàng & Hoàn tiền</a></li>
                 </ul>
             </div>
             
             <div class="footer-section">
-                <h3>Phương Thức Thanh Toán</h3>
+                <h3><i class="fas fa-credit-card"></i> Phương Thức Thanh Toán</h3>
                 <ul>
-                    <li><a href="#">Thẻ tín dụng</a></li>
-                    <li><a href="#">Ví điện tử</a></li>
-                    <li><a href="#">Thanh toán khi nhận hàng</a></li>
-                    <li><a href="#">Trả góp</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Thẻ tín dụng</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Ví điện tử</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Thanh toán khi nhận hàng</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Trả góp</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
-                <h3>Kết Nối Với Chúng Tôi</h3>
+                <h3><i class="fas fa-share-alt"></i> Kết Nối Với Chúng Tôi</h3>
                 <div class="social-icons">
                     <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -142,10 +146,10 @@
                     <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="app-download">
-                    <h4>Tải ứng dụng eBuy</h4>
+                    <h4><i class="fas fa-mobile-alt"></i> Tải ứng dụng eBuy</h4>
                     <div class="app-buttons">
-                        <a href="#">Download on App Store</a>
-                        <a href="#">Get it on Google Play</a>
+                        <a href="#" class="app-store"><i class="fab fa-apple"></i> App Store</a>
+                        <a href="#" class="google-play"><i class="fab fa-google-play"></i> Google Play</a>
                     </div>
                 </div>
             </div>
@@ -154,15 +158,16 @@
         <div class="footer-bottom">
             <div class="copyright">
                 <div class="designer-credit">
-                    <p>Design by: <a href="https://github.com/hayato-shino05" target="_blank">hayato-shino05</a></p>
+                    <p>Design by: <a href="https://github.com/hayato-shino05" target="_blank"><i class="fab fa-github"></i> hayato-shino05</a></p>
                 </div>
-                <p>&copy; 2025 eBuy. Tất cả các quyền được bảo lưu.</p>
-                <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
-                <p>Số điện thoại: (84) 123-456-789</p>
-                <p>Email: support@ebuy.com</p>
+                <p><i class="far fa-copyright"></i> 2025 eBuy. Tất cả các quyền được bảo lưu.</p>
+                <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
+                <p><i class="fas fa-phone"></i> Số điện thoại: (84) 123-456-789</p>
+                <p><i class="fas fa-envelope"></i> Email: support@ebuy.com</p>
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <a href="#" class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
 </body>
 </html> 
