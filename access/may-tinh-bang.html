@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eBuy - Máy tính bảng</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -22,6 +23,9 @@
                 </form>
             </div>
             <div class="user-actions">
+                <button id="darkModeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
                 <a href="#" class="login-btn"><i class="fas fa-user"></i> Đăng nhập</a>
                 <a href="#" class="register-btn"><i class="fas fa-user-plus"></i> Đăng ký</a>
                 <a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="cart-count">0</span></a>
@@ -30,6 +34,9 @@
     </header>
 
     <nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
         <ul>
             <li><a href="../index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
             <li>
@@ -66,24 +73,110 @@
     </nav>
 
     <main>
+        <!-- Hero Banner -->
+        <div class="hero-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../picture/products/ipad.jpg');">
+                        <div class="banner-content">
+                            <h1>Máy tính bảng</h1>
+                            <p>Giảm giá đến 20%</p>
+                            <a href="#" class="banner-btn">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label>Thương hiệu:</label>
+                    <div class="filter-buttons">
+                        <button class="filter-tab">Tất cả</button>
+                        <button class="filter-tab">Apple</button>
+                        <button class="filter-tab">Samsung</button>
+                        <button class="filter-tab">Xiaomi</button>
+                        <button class="filter-tab">Huawei</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>Giá:</label>
+                    <div class="filter-buttons">
+                        <button class="filter-tab">Dưới 10tr</button>
+                        <button class="filter-tab">10-15tr</button>
+                        <button class="filter-tab">15-25tr</button>
+                        <button class="filter-tab">Trên 25tr</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
         <section class="featured-products">
-            <h2><i class="fas fa-tablet-alt"></i> Máy tính bảng</h2>
+            <div class="section-header">
+                <h2><i class="fas fa-tablet-alt"></i> Máy tính bảng</h2>
+                <div class="sort-options">
+                    <select>
+                        <option value="newest">Mới nhất</option>
+                        <option value="price-asc">Giá tăng dần</option>
+                        <option value="price-desc">Giá giảm dần</option>
+                        <option value="popular">Bán chạy</option>
+                    </select>
+                </div>
+            </div>
             <div class="products">
                 <div class="product">
                     <div class="product-badge">Mới</div>
-                    <img src="../picture/products/ipad.jpg" alt="iPad Pro M2">
+                    <div class="product-image">
+                        <img src="../picture/products/ipad.jpg" alt="iPad Pro M2">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
                     <div class="product-info">
+                        <div class="product-category">Máy tính bảng</div>
                         <div class="product-title">iPad Pro M2</div>
-                        <div class="product-price">29.990.000 ₫</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(88)</span>
+                        </div>
+                        <div class="product-price">32.990.000 ₫</div>
                         <div class="product-bid">Còn 2 giờ</div>
                         <a href="#" class="cta-button">Mua ngay</a>
                     </div>
                 </div>
                 <div class="product">
                     <div class="product-badge hot">Hot</div>
-                    <img src="../picture/products/ipad.jpg" alt="iPad Air M1">
+                    <div class="product-image">
+                        <img src="../picture/products/ipad.jpg" alt="iPad Air">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
                     <div class="product-info">
-                        <div class="product-title">iPad Air M1</div>
+                        <div class="product-category">Máy tính bảng</div>
+                        <div class="product-title">iPad Air</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(92)</span>
+                        </div>
                         <div class="product-price">19.990.000 ₫</div>
                         <div class="product-bid">15 lượt đấu giá</div>
                         <a href="#" class="cta-button">Đặt giá</a>
@@ -91,14 +184,47 @@
                 </div>
                 <div class="product">
                     <div class="product-badge sale">Sale</div>
-                    <img src="../picture/products/ipad.jpg" alt="iPad Gen 10">
+                    <div class="product-image">
+                        <img src="../picture/products/ipad.jpg" alt="iPad mini">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
                     <div class="product-info">
-                        <div class="product-title">iPad Gen 10</div>
+                        <div class="product-category">Máy tính bảng</div>
+                        <div class="product-title">iPad mini</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(76)</span>
+                        </div>
                         <div class="product-price">16.990.000 ₫</div>
                         <div class="product-bid">Mua ngay</div>
                         <a href="#" class="cta-button">Thêm vào giỏ</a>
                     </div>
                 </div>
+            </div>
+            <div class="view-more">
+                <a href="#" class="view-more-btn">Xem thêm <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Đăng ký nhận tin</h2>
+                    <p>Nhận thông tin về sản phẩm mới và ưu đãi đặc biệt</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Nhập email của bạn" required>
+                    <button type="submit">Đăng ký <i class="fas fa-paper-plane"></i></button>
+                </form>
             </div>
         </section>
     </main>
@@ -135,6 +261,12 @@
                     <li><a href="#"><i class="fas fa-chevron-right"></i> Thanh toán khi nhận hàng</a></li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i> Trả góp</a></li>
                 </ul>
+                <div class="payment-methods">
+                    <img src="../picture/payment/visa.png" alt="Visa">
+                    <img src="../picture/payment/mastercard.png" alt="Mastercard">
+                    <img src="../picture/payment/momo.png" alt="MoMo">
+                    <img src="../picture/payment/zalopay.png" alt="ZaloPay">
+                </div>
             </div>
 
             <div class="footer-section">
@@ -144,6 +276,7 @@
                     <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
                 </div>
                 <div class="app-download">
                     <h4><i class="fas fa-mobile-alt"></i> Tải ứng dụng eBuy</h4>
@@ -169,5 +302,9 @@
     </footer>
 
     <a href="#" class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html> 

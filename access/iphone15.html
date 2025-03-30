@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eBuy - iPhone 15 Pro Max</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -74,7 +74,7 @@
             </div>
             <div class="product-info">
                 <h1>iPhone 15 Pro Max</h1>
-                <div class="product-price">39.990.000 ₫</div>
+                <div class="product-price">39.990.000 đ</div>
                 <div class="product-description">
                     <p>iPhone 15 Pro Max là chiếc điện thoại mới nhất của Apple với chip A17 Pro mạnh mẽ, camera 48MP, màn hình Super Retina XDR 6.7 inch và thiết kế titan cao cấp.</p>
                     <ul>
@@ -84,9 +84,15 @@
                         <li><i class="fas fa-battery-full"></i> Pin 4422mAh</li>
                     </ul>
                 </div>
-                <div class="product-actions">
-                    <a href="#" class="cta-button"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ</a>
-                    <a href="#" class="cta-button secondary"><i class="fas fa-heart"></i> Yêu thích</a>
+                <div class="action-buttons">
+                    <button class="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Thêm vào giỏ
+                    </button>
+                    <button class="wishlist-btn">
+                        <i class="fas fa-heart"></i>
+                        Yêu thích
+                    </button>
                 </div>
             </div>
         </section>
@@ -99,9 +105,9 @@
                     <img src="../picture/products/15.jpg" alt="iPhone 15">
                     <div class="product-info">
                         <div class="product-title">iPhone 15</div>
-                        <div class="product-price">19.990.000 ₫</div>
+                        <div class="product-price">19.990.000 đ</div>
                         <div class="product-bid">Còn 2 giờ</div>
-                        <a href="#" class="cta-button">Mua ngay</a>
+                        <button class="buy-now-btn">Mua ngay</button>
                     </div>
                 </div>
                 <div class="product">
@@ -109,9 +115,9 @@
                     <img src="../picture/products/s-l960.png" alt="Samsung Galaxy S24 Ultra">
                     <div class="product-info">
                         <div class="product-title">Samsung Galaxy S24 Ultra</div>
-                        <div class="product-price">29.990.000 ₫</div>
+                        <div class="product-price">29.990.000 đ</div>
                         <div class="product-bid">15 lượt đấu giá</div>
-                        <a href="#" class="cta-button">Đặt giá</a>
+                        <button class="bid-btn">Đặt giá</button>
                     </div>
                 </div>
                 <div class="product">
@@ -119,9 +125,9 @@
                     <img src="../picture/products/15.jpg" alt="iPhone 15 Pro">
                     <div class="product-info">
                         <div class="product-title">iPhone 15 Pro</div>
-                        <div class="product-price">34.990.000 ₫</div>
+                        <div class="product-price">34.990.000 đ</div>
                         <div class="product-bid">Mua ngay</div>
-                        <a href="#" class="cta-button">Thêm vào giỏ</a>
+                        <button class="buy-now-btn">Thêm vào giỏ</button>
                     </div>
                 </div>
             </div>
@@ -160,6 +166,12 @@
                     <li><a href="#"><i class="fas fa-chevron-right"></i> Thanh toán khi nhận hàng</a></li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i> Trả góp</a></li>
                 </ul>
+                <div class="payment-methods">
+                    <img src="../picture/payment/visa.png" alt="Visa">
+                    <img src="../picture/payment/mastercard.png" alt="Mastercard">
+                    <img src="../picture/payment/momo.png" alt="MoMo">
+                    <img src="../picture/payment/zalopay.png" alt="ZaloPay">
+                </div>
             </div>
 
             <div class="footer-section">
@@ -169,6 +181,7 @@
                     <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
                 </div>
                 <div class="app-download">
                     <h4><i class="fas fa-mobile-alt"></i> Tải ứng dụng eBuy</h4>
@@ -194,5 +207,6 @@
     </footer>
 
     <a href="#" class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+    <script src="./js/product.js" defer></script>
 </body>
 </html> 
